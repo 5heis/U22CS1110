@@ -1,3 +1,4 @@
+//import the scanner 
 import java.util.Scanner;
 
 public class calculator {
@@ -10,15 +11,15 @@ public class calculator {
         Scanner scanner = new Scanner(System.in);
 
         // Prompt user for the first value and store it in num1
-        System.out.print("Input First value: ");
+        System.out.print("Input your first value: ");
         num1 = scanner.nextDouble();
 
         // Prompt user for the second value and store it in num2
-        System.out.print("Input Second value: ");
+        System.out.print("Input your second value: ");
         num2 = scanner.nextDouble();
 
         // Prompt user for the operator (+, -, *, /) and store it in the operator variable
-        System.out.print("Input operand (+, -, *, /): ");
+        System.out.print("input an operand (+, -, *, /): ");
         operator = scanner.next().charAt(0);
 
         // Use a switch statement to perform the appropriate operation based on the operator
@@ -26,26 +27,26 @@ public class calculator {
             // Addition operation
             case '+':
                 result = num1 + num2;
-                System.out.println("Result: " + result);
+                System.out.println("Answer: " + result);
                 break;
             // Subtraction operation
             case '-':
                 result = num1 - num2;
-                System.out.println("Result: " + result);
+                System.out.println("Answer: " + result);
                 break;
             // Multiplication operation
             case '*':
                 result = num1 * num2;
-                System.out.println("Result: " + result);
+                System.out.println("Answer: " + result);
                 break;
             // Division operation
             case '/':
                 // Check if num2 is not zero to avoid division by zero
                 if (num2 != 0) {
                     result = num1 / num2;
-                    System.out.println("Result: " + result);
+                    System.out.println("Answer: " + result);
                 } else {
-                    System.out.println("Error: Division by zero is not allowed.");
+                    System.out.println("Error: Math Error.");
                 }
                 break;
             // Default case for invalid operator
